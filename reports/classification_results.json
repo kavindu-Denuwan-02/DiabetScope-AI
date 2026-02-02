@@ -1,0 +1,59 @@
+{
+  "experiment": "classification",
+  "dataset": {
+    "source": "Pima Indians Diabetes",
+    "total_samples": 768,
+    "train_samples": 614,
+    "test_samples": 154,
+    "features": 11
+  },
+  "selected_model": "XGBoost",
+  "selection_criteria": "Recall > F1-Score > MCC",
+  "all_models": [
+    {
+      "model": "Logistic Regression",
+      "recall": 0.5185185185185185,
+      "f1_score": 0.56,
+      "mcc": 0.3529299526817895,
+      "roc_auc": 0.8085185185185185,
+      "precision": 0.6086956521739131,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "model": "Decision Tree",
+      "recall": 0.46296296296296297,
+      "f1_score": 0.5319148936170213,
+      "mcc": 0.34057079519053324,
+      "roc_auc": 0.7763888888888889,
+      "precision": 0.625,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "model": "KNN (k=5)",
+      "recall": 0.5555555555555556,
+      "f1_score": 0.5769230769230769,
+      "mcc": 0.36232865092627065,
+      "roc_auc": 0.7756481481481481,
+      "precision": 0.6,
+      "accuracy": 0.7142857142857143
+    },
+    {
+      "model": "Random Forest",
+      "recall": 0.6666666666666666,
+      "f1_score": 0.6792452830188679,
+      "mcc": 0.5112313234371975,
+      "roc_auc": 0.827037037037037,
+      "precision": 0.6923076923076923,
+      "accuracy": 0.7792207792207793
+    },
+    {
+      "model": "XGBoost",
+      "recall": 0.7777777777777778,
+      "f1_score": 0.6885245901639344,
+      "mcc": 0.4975498563492141,
+      "roc_auc": 0.8281481481481483,
+      "precision": 0.6176470588235294,
+      "accuracy": 0.7532467532467533
+    }
+  ]
+}
