@@ -1,0 +1,49 @@
+{
+  "experiment": "regression",
+  "target": "Glucose (mg/dL)",
+  "dataset": {
+    "total_samples": 768,
+    "train_samples": 614,
+    "test_samples": 154,
+    "features": 10
+  },
+  "selected_model": "Gradient Boosting",
+  "selection_criteria": "Lowest MAE",
+  "all_models": [
+    {
+      "model": "Linear Regression",
+      "mae": 3.8425987617952884,
+      "rmse": 5.561899685543273,
+      "r2": 0.9692592151830897,
+      "mape": 3.3876690977964365
+    },
+    {
+      "model": "Ridge Regression",
+      "mae": 3.8436412984191826,
+      "rmse": 5.562786372062843,
+      "r2": 0.969249412916328,
+      "mape": 3.3883489276540733
+    },
+    {
+      "model": "Lasso Regression",
+      "mae": 3.8416219613738094,
+      "rmse": 5.56244719978287,
+      "r2": 0.9692531626302573,
+      "mape": 3.3852275143563584
+    },
+    {
+      "model": "Random Forest",
+      "mae": 3.015793244183666,
+      "rmse": 4.695159489419495,
+      "r2": 0.9780936840906053,
+      "mape": 2.4512729484497657
+    },
+    {
+      "model": "Gradient Boosting",
+      "mae": 2.437319485275283,
+      "rmse": 3.6012332162362237,
+      "r2": 0.987112426888445,
+      "mape": 1.9899902004403285
+    }
+  ]
+}
